@@ -49,23 +49,15 @@ button {
 .container {
 	width: 95%;
 	max-width: 780px;
-	padding-bottom: 2em;
+	padding: 1em 2em;
 	margin: 0 auto 2em;
 	background: #fff;
 	border-radius: 0.5em;
 	box-shadow: 0 3px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 }
-.main-content {
-	padding: 1em 2em;
-}
 
-.icn-error {
-	font-size: 3.2em;
-	margin-bottom: 0.25em;
-}
-
-.main-content ul li a:hover {
+.container ul li a:hover {
 	text-decoration: underline;
 	cursor: pointer;
 }

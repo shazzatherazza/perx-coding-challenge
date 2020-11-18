@@ -12,7 +12,7 @@ function Home() {
 	};
 
 	return (
-		<div className="main-content">
+		<div>
 			<h1>Perx Star Wars Frontend Coding Challenge</h1>
 			<h2>Star Wars character search</h2>
 			<form onSubmit={handleSubmit}>

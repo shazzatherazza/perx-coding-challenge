@@ -9,8 +9,7 @@ const CharacterProfile = (props) => {
 	const [isLoading, setIsLoading] = useState(true);
 	const [error, setError] = useState();
 	const query = props.match.params.id;
-	let bingSubscriptionKey = "bb463914a7bc4a6f8b3fe165c202f560";
-
+	const bingSubscriptionKey = process.env.REACT_APP_BING_SUBSCRIPTION_KEY;
 	useEffect(() => {
 		axios(`https://swapi.dev/api/people/` + query)
 			.then((response) => {
@@ -62,7 +61,7 @@ const CharacterProfile = (props) => {
 	} else {
 		comp = <NotFound />;
 	}
-	return <div className="main-content">{comp}</div>;
+	return <div>{comp}</div>;
 };
 
 export default CharacterProfile;
